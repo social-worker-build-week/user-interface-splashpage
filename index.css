@@ -286,4 +286,40 @@ footer {
     padding-top: 20px;
 }
 
+.aboutUs-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.bioImg {
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.aboutUs-mainContent {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.aboutUs-mainContent h1 {
+    margin-bottom: 40px;
+    color: #1E4F5C;
+}
+
+.teamBios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bio {
+    font-size: 1.8rem;
+    margin-right: 30px;
+}
 
