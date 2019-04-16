@@ -1,1 +1,358 @@
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    @media(max-width: 510px){
+        .container{
+            width:100%;
+        }
+    }
+}
+header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background: #1E4F5C;
+    font-size: 3rem;
+    height: 50px;
+}
+
+.header {
+    /* font-size: 3rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-right: 10%;
+    /* background-color: #1E4F5C;
+    color: white; */
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.right-side-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.header h1 {
+    margin-left: 10%;
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu {
+    display: none;
+}
+
+.jumbo-img {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.jumbotron .jumbo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 6.5rem;
+    transform: translate(-50%, -50%);
+    background: rgba(120, 120, 122, 0.425);
+    width: 100%;
+    padding: 60px 0;
+}
+
+@media(max-width: 510px){
+    .jumbotron .jumbo-text{
+    font-size: 1.8rem;
+    padding: 30px 0;
+    }
+}
+
+.main-content {
+    margin: 40px 30px;
+    line-height: 25px;
+}
+
+@media(max-width:510px){
+    .main-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main-content h1 {
+    font-size: 5rem;
+    color: #1E4F5C;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+.main-content .button {
+    width: 150px;
+    background: #1E4F5C;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 12px;
+    color: white;
+}
+
+@media(max-width:510px){
+    .main-content .button{
+        width: 80%;
+    }
+}
+
+.main-content p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background: whitesmoke;
+    padding: 30px 0;
+}
+
+
+.footer-text {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.footer-content {
+    border-bottom: 1px solid lightgray;
+    margin: 10px;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+
+@media(max-width:510px){
+    .footer-content{
+        text-align: center;
+    }
+}
+
+.bottom-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.aboutUs-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.bioImg {
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.aboutUs-mainContent {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.aboutUs-mainContent h1 {
+    margin-bottom: 40px;
+    color: #1E4F5C;
+}
+
+.teamBios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bio {
+    font-size: 1.8rem;
+    margin-right: 30px;
+}
 
