@@ -155,10 +155,11 @@ h2 {
     max-width: 1250px;
     margin: 0 auto;
 
-    @media(max-width: 510px){
-        .container{
-            width:100%;
-        }
+}
+
+@media(max-width: 510px){
+    .container{
+        width:100%;
     }
 }
 header {
@@ -201,6 +202,7 @@ header {
     font-size: 1.8rem;
     width: 100px;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header h1 {
@@ -310,6 +312,7 @@ footer {
 @media(max-width:510px){
     .footer-content{
         text-align: center;
+        height: 100%;
     }
 }
 
@@ -317,6 +320,12 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding-top: 20px;
+}
+
+@media(max-width:510px){
+    .bottom-footer{
+        height: 100%;
+    }
 }
 
 .aboutUs-img {
@@ -338,6 +347,13 @@ footer {
     margin-bottom: 20px;
 }
 
+@media(max-width:510px){
+    .aboutUs-mainContent{
+        height: 100%;
+    }
+}
+
+
 .aboutUs-mainContent h1 {
     margin-bottom: 40px;
     color: #1E4F5C;
@@ -351,8 +367,26 @@ footer {
     justify-content: space-around;
 }
 
+@media(max-width:510px){
+    .teamBios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+}
+
 .bio {
     font-size: 1.8rem;
     margin-right: 30px;
+}
+
+@media(max-width:510px){
+    .bio{
+        margin-bottom: 20px;
+        height: 100%;
+        margin-right: 0;
+    }
 }
 
