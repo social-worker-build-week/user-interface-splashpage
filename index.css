@@ -171,6 +171,7 @@ header {
     background: #1E4F5C;
     font-size: 3rem;
     height: 50px;
+    padding: 0 40px;
 }
 
 .header {
@@ -180,9 +181,6 @@ header {
     justify-content: space-between;
     height: 50px;
     width: 100%;
-    margin-right: 40px;
-    /* background-color: #1E4F5C;
-    color: white; */
 }
 
 .header a {
@@ -206,7 +204,6 @@ header {
 }
 
 .header h1 {
-    margin-left: 40px;
     margin-top: 10px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -276,11 +273,14 @@ header {
     margin-top: 30px;
     padding-top: 12px;
     color: white;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 @media(max-width:510px){
     .main-content .button{
         width: 80%;
+
     }
 }
 
