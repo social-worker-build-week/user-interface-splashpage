@@ -233,6 +233,7 @@ header {
 
 .main-content {
     margin: 40px 30px;
+    line-height: 25px;
 }
 
 .main-content h1 {
@@ -250,7 +251,7 @@ header {
     text-align: center;
     height: 50px;
     margin-top: 30px;
-    padding-top: 15px;
+    padding-top: 12px;
     color: white;
 }
 
@@ -264,6 +265,7 @@ footer {
     padding: 30px 0;
 }
 
+
 .footer-text {
     margin-bottom: 20px;
     line-height: 20px;
@@ -272,6 +274,10 @@ footer {
 .footer-content {
     border-bottom: 1px solid lightgray;
     margin: 10px;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
 }
 
 .bottom-footer {
