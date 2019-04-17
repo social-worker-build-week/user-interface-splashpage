@@ -9,51 +9,65 @@
     <title>Educell</title>
     <link rel="icon" type="image/png" href="./images/EducellFavicon.png">
     <script src="menu.js" async></script>
+    <script src="tabs.js" async></script>
+
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header">
-                <h1>Educell</h1>
+                <a class="hero" href="index.html">Educell</a>
                 <div class="right-side-nav">
                     <a href="#">Login</a>
                     <img class="menu-button" src="./images/menu.png"/>
                 </div>
             </div>
             <div class="menu">
-                <a href="#">Home</a><br>
+                <a href="index.html">Home</a><br>
                 <a href="#">Services</a><br>
-                <a href="#">About us</a>
+                <a href="about-us.html">About Us</a>
+                <a href="#">Join</a>
             </div>
         </header>
 
-        <section class="aboutUs-mainContent">
+        
             <div class="aboutUsPic">
                 <img class="aboutUs-img" src="./images/aboutUscodesnippet2.jpg" alt="empty classroom with desks">
             </div>
-
+            
+        <section class="aboutUs-mainContent">
             <h1>Meet the Team</h1>
-            <div class="teamBios">
 
-                <div class="bio">
+            <div class="tabs">
+                <div class="topics">
+                    <span class="title">SECTIONS:</span>
+                    <div data-tab="all" class="tab active-tab">ALL</div>
+                    <div data-tab="FE-engineer" class="tab">Front End Application</div>
+                    <div data-tab="UX" class="tab">UX Design</div>
+                    <div data-tab="UI" class="tab">Front End UI</div>
+                </div>
+            </div>
+            
+            <div class="teamBios">
+                <div class="card" data-tab="FE-engineer">
                     <img class="bioImg" src="./images/Destiny.jpg" alt="">
                     <p>Destiny Tibbitts</p>
                     <p>Lead Front End Engineer</p>
                     <a href="https://github.com/Dtibbs5145">GH: Dtibbs5149</a>
                 </div>
 
-                <div class="bio">
-                        <img class="bioImg" src="./images/Meera.jpg" alt="">
-                        <p>Meera Anderson</p>
-                        <p>Lead UX Designer</p>
-                        <a href="https://github.com/meeraandersen">GH: meeraanderson</a>
+                <div class="card" data-tab="UX">
+                    <img class="bioImg" src="./images/Meera.jpg" alt="">
+                    <p>Meera Anderson</p>
+                    <p>Lead UX Designer</p>
+                    <a href="https://github.com/meeraandersen">GH: meeraanderson</a>
                 </div>
 
-                <div class="bio">
-                        <img class="bioImg" src="./images/LeonelProfile.jpg" alt="">
-                        <p>Leonel Flores</p>
-                        <p>Lead Front End UI Designer</p>
-                        <a href="https://github.com/lflores12">GH: lflores12</a>
+                <div class="card" data-tab="UI">
+                    <img class="bioImg" src="./images/LeonelProfile.jpg" alt="">
+                    <p>Leonel Flores</p>
+                    <p>Lead Front End UI Designer</p>
+                    <a href="https://github.com/lflores12">GH: lflores12</a>
                 </div>
 
             </div>
