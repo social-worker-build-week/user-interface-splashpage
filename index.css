@@ -150,6 +150,11 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     width: 100%;
     /* max-width: 1250px; */
@@ -318,11 +323,36 @@ header {
     margin-right: 10px;
 }
 
-@media(max-width:510px){
-    .main-content .button{
-        width: 80%;
+.main-content .button2  {
+    width: 150px;
+    background: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 12px;
+    color: #1E4F5C;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #1E4F5C;
+}
 
+@media(max-width:510px){
+    .main-content .button2 {
+        width: 80%;
     }
+}
+
+
+@media(max-width:510px){
+    .main-content .button {
+        width: 80%;
+    }
+}
+
+.main-content .button2 a {
+    color: #1E4F5C;
 }
 
 .main-content p {
