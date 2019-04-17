@@ -163,7 +163,7 @@ h2 {
     }
 }
 header {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,6 +172,8 @@ header {
     font-size: 3rem;
     height: 50px;
     padding: 0 40px;
+    position: fixed;
+    z-index: 2;
 }
 
 .header {
@@ -211,22 +213,30 @@ header {
 .menu {
     display: none;
     position: fixed;
-    top: 75px;
-    left: 0;
-    width: 350px;
-    height: 100vh;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    height: 50vh;
     background-color: #1E4F5C;
-
+    z-index: 2;
+    text-align: center;
 }
 
 .menu a {
-    font-size: 32px;
-    padding: 30px 0;
+    font-size: 2.5rem;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .menu--open{
     display: block;
+}
+
+.menu-button {
+    cursor: pointer;
 }
 
 .jumbo-img {
