@@ -373,7 +373,7 @@ footer {
     height: 300px;
     width: 100%;
     margin-bottom: 40px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .bioImg {
@@ -430,7 +430,7 @@ footer {
     justify-content: none;
     align-items: center;
     flex-direction: row;
-    color: #fff;
+    color: white;
     background-color: #1E4F5C;
     margin: 0 5px;
     padding: 2px 10px;
