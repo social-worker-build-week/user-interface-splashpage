@@ -338,6 +338,12 @@ header {
     border: 2px solid #1E4F5C;
 }
 
+@media(max-width:510px){
+    .main-content .button2 {
+        width: 80%;
+    }
+}
+
 
 @media(max-width:510px){
     .main-content .button {
