@@ -210,6 +210,23 @@ header {
 
 .menu {
     display: none;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #1E4F5C;
+
+}
+
+.menu a {
+    font-size: 32px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu--open{
+    display: block;
 }
 
 .jumbo-img {
@@ -244,7 +261,6 @@ header {
 
 .main-content {
     margin: 40px 30px;
-    line-height: 25px;
 }
 
 @media(max-width:510px){
@@ -261,6 +277,7 @@ header {
     color: #1E4F5C;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .main-content .button {
