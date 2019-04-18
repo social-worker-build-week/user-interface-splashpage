@@ -534,6 +534,16 @@ footer {
     }
 }
 
+@media (max-width:810px){
+    .teamBios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+}
+
 .card {
     font-size: 1.8rem;
     margin-right: 30px;
